@@ -16,7 +16,7 @@ const App = () => {
 
   const [filter, setFilter] = useState('');
 
-  const addContacts = (name, number) => {
+  const addContacts = ({ name, number }) => {
     const isNameAdded = contacts.find(
       contact => contact.name.toLowerCase() === name.toLowerCase()
     );
